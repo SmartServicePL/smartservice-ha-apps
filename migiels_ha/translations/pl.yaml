@@ -1,0 +1,10 @@
+configuration:
+  ha_entities:
+    name: Encje w Home Assistant
+    description: Publikuje wyniki MIGIELS (nadwyżka OZE, niedogrzane pomieszczenia, grzałki z OZE, okna planu, decyzje dla grzałek, stan) jako encje urządzenia MIGIELS przez MQTT (broker Mosquitto). Potrzebne do automatyzacji MIGIELS, powiadomień i panelu na telefon. MIGIELS publikuje tylko stany własnych encji; urządzeniami sterują automatyzacje Home Assistant, i to dopiero po włączeniu sterowania przez administratora. Domyślnie włączone; bez dodatku Mosquitto broker MIGIELS czeka i publikuje sam, gdy broker się pojawi.
+  installation_code:
+    name: Kod instalacji
+    description: Kod z panelu klienta Smart Service (panel.smartservice.net.pl → Kod dla MIGIELS). MIGIELS pokazuje wtedy w nagłówku Twój pakiet i ważność aktualizacji. Nic nie blokuje — bez kodu MIGIELS działa tak samo.
+  household_viewer_access:
+    name: Dostęp domowników
+    description: Udostępnia aktywnym użytkownikom Home Assistant wyłącznie ograniczony widok operacyjny MIGIELS (domyślnie włączone). Surowy inwentarz pozostaje dostępny tylko dla administratorów.

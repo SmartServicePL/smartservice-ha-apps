@@ -1,0 +1,39 @@
+name: MIGIELS — Menedżer Instalacji Grzewczej i Energii
+version: 1.15.2
+slug: migiels_ha
+description: Menedżer instalacji grzewczej i energii — lokalny, liczy i doradza; urządzeniami sterują przygotowane przez MIGIELS automatyzacje Home Assistant, tylko po włączeniu przez administratora
+url: https://panel.smartservice.net.pl
+arch:
+- aarch64
+- amd64
+homeassistant: 2025.10.0
+init: false
+startup: application
+boot: auto
+timeout: 30
+stage: stable
+ingress: true
+ingress_port: 8099
+ingress_stream: false
+watchdog: http://[HOST]:[PORT:8099]/healthz
+panel_icon: mdi:alpha-m-box
+panel_title: MIGIELS - KONFIGURACJA
+panel_admin: false
+homeassistant_api: true
+backup: cold
+services:
+- mqtt:want
+map:
+- type: homeassistant_config
+  read_only: false
+  path: /homeassistant
+- type: share
+  read_only: false
+options:
+  household_viewer_access: true
+  ha_entities: true
+schema:
+  household_viewer_access: bool
+  ha_entities: bool
+  installation_code: password?
+image: ghcr.io/smartservicepl/{arch}-migiels-ha

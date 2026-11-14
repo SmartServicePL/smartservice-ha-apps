@@ -1,0 +1,4 @@
+configuration:
+  installation_code:
+    name: Kod instalacji
+    description: Kod z panelu klienta Smart Service. Potrzebny tylko wtedy, gdy Smart Service HA nie połączy się sam z kontem — zwykle wystarczy, że MIGIELS albo Smart Service HA ma już konto w tym samym Home Assistant. Bez kodu wszystko działa tak samo.
