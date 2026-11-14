@@ -1,5 +1,17 @@
 # Lista zmian
 
+## 1.15.3 — 14 listopada 2026
+
+### Ulepszenia
+- Gdy magazyn energii jest pełny, a falownik zaczyna ograniczać produkcję PV, MIGIELS próbuje włączyć kolejny stopień grzałki, żeby ta energia nie przepadała — przy poborze z sieci lub z magazynu grzałka od razu wraca.
+
+### Poprawki
+- Oszczędność przy buforze z wężownicą liczona jedną regułą na każdym ekranie, także za poprzednie miesiące — kwoty ogrzewania i ciepłej wody mogą się zmienić, a drobne ujemne kwoty pokazujemy jako 0 zł.
+- Grzałki: postój, w którym termostat grzałki odciął grzanie, nie jest już liczony jako oszczędność z nadwyżki, a karta ciepłej wody nie pokazuje nocnego „z magazynu” z samego postoju; kwoty sprzed aktualizacji zostają bez przeliczenia.
+- Chwilowy błąd odczytu ustawień falownika (np. nagłe 0 albo „niedostępne”) nie zmienia już rezerwy ani planu — przez 15 minut MIGIELS bierze ostatnią dobrą wartość, a Diagnostyka pokazuje „Odczyt ustawień falownika niepewny”.
+- Wyjście ze sterowania ogrzewaniem: przełącznik wyłączony przez Ciebie w trakcie wyjścia nie trafia już do „Nie wróciło” i zostaje wyłączony.
+- Na telefonie harmonogram pokazuje nazwę dni nad godzinami, a kreator i Konfiguracja podpowiadają, że wygodniej skonfigurować MIGIELS na komputerze albo tablecie; opis głowic elektronicznych w kreatorze mówi, że MIGIELS ustawia zawór tylko w głowicach, które pozwalają ustawić jego otwarcie.
+
 ## 1.15.2 — 14 listopada 2026
 
 ### Poprawki
@@ -48,8 +60,3 @@
 - Rezerwa magazynu Deye bez sieci to najniższy poziom z programów czasowych falownika — ta sama o każdej porze, bez nadmiaru ostrzeżeń.
 - TRUE Zero Export: po zadziałaniu zabezpieczenia przekaźnika automatyzacja nigdy sama nie podłącza sieci — także gdy MIGIELS chwilowo nie odpowiada.
 - Wyłączenie sterowania TRUE Zero Export kończy się podglądem po potwierdzeniu, że dom jest na sieci.
-
-## 1.14.18 — 13 listopada 2026
-
-### Zmiany
-- Wersja zgodna ze Smart Service HA 1.9.18 (wspólne części: powiadomienia o karmniku i pokoje robota) — bez zmian w działaniu MIGIELS.

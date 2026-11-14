@@ -1,5 +1,21 @@
 # Smart Service HA — historia zmian
 
+## 1.9.23 — 14 listopada 2026
+
+### Ulepszenia
+- Kosiarka Worx Vision Cloud dostaje swój harmonogram koszenia.
+- Powiadomienia robota i kosiarki: każde urządzenie osobno, błędy z dźwiękiem, a „wymaga uwagi” znika dopiero, gdy urządzenie znów pracuje; gdy zawór nawadniania się nie zamknie, dostajesz od razu powiadomienie z dźwiękiem.
+
+### Poprawki
+- Alarm: pierwszy PIN domownika ustawia teraz tylko administrator.
+- Usunięty albo chwilowo niedostępny telefon nie zatrzymuje już powiadomień do pozostałych domowników ani pracy robota.
+- Aktualizacja MIGIELS nie rusza przy uzbrojonym alarmie.
+- Bez MIGIELS menu MIGIELS pokazuje ofertę zamiast „Zaktualizuj”, komunikat o ponownym uruchomieniu Home Assistant znika po restarcie, a stan połączenia z kontem zmienia się od razu po „Połącz” i „Rozłącz”.
+- Na telefonie i tablecie napisy w menu, w ustawieniach modułów i na kaflach nie są już ucinane ani nie nachodzą na siebie; Pokoje z wieloma piętrami nie przesuwają się w bok.
+
+### Po aktualizacji
+- Sprawdź w Bezpieczeństwie, kto ma PIN, i usuń te, których nie nadawałeś.
+
 ## 1.9.22 — 14 listopada 2026
 
 ### Poprawki
@@ -38,14 +54,3 @@
 - Oświetlenie: tryb „Automatycznie” — bez okien światło przy każdym ruchu, z oknami próg z historii czujnika.
 ### Poprawki
 - Karta oferty MIGIELS bez ceny — cena i zakup tylko w panelu Smart Service.
-
-## 1.9.18 — 13 listopada 2026
-
-### Ulepszenia
-- Podlewanie ostrzega o braku wody: gdy zawór strefy jest otwarty, a czujnik przepływu, licznik albo czujnik ciśnienia wody nie pokazuje wody, przychodzi powiadomienie „Brak wody w podlewaniu”.
-- Przy braku wody i pracującej pompie podlewania zawory stref zamykają się same, żeby pompa nie pracowała na sucho.
-- Robot sprzątający: pokoje z mapy robota same łączą się z pomieszczeniami domu przy zakładaniu automatyzacji — Twoje własne połączenia zostają.
-- „Usuń moduł” robota przywraca też połączenia pokoi sprzed modułu (czerwone okno mówi o tym jedną linią).
-- Karmnik PetKit: powiadomienie, gdy kończy się karma.
-### Poprawki
-- Robot nie dostaje złego pomieszczenia kuwety, gdy kuweta stoi w pokoju dodanym tylko w Smart Service HA.
