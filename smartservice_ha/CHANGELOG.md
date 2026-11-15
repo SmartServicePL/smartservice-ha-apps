@@ -1,5 +1,21 @@
 # Smart Service HA — historia zmian
 
+## 1.9.26 — 15 listopada 2026
+
+### Nowe
+- Panel w menu bocznym Home Assistant nazywa się teraz „ASTRA” (widoki ASTRA Mobile na telefonie, ASTRA Desktop i ASTRA Standard na komputerze i tablecie); nazwa nadana przez Ciebie zostaje bez zmian.
+- W zakładce MIGIELS przycisk „Zainstaluj” / „Wypróbuj 90 dni” instaluje MIGIELS od razu, z postępem w tym samym miejscu.
+- Bezpieczeństwo: PIN pod przymusem działa dokładnie jak zwykły PIN domownika, a domownikom i zaufanym telefonom, które są poza domem, wysyła cichy alarm.
+- Syrenę można podłączyć przez przekaźnik — wybierasz go w Bezpieczeństwo → Alarm → Syrena.
+
+### Ulepszenia
+- Po pierwszej instalacji Smart Service HA sam pojawia się w menu bocznym Home Assistant.
+- Powiadomienia o koszeniu mają czytelniejsze tytuły i mówią, co zrobić.
+
+### Poprawki
+- „Zainstaluj MIGIELS” i „Zainstaluj Bank czasu” działają od razu po instalacji Smart Service HA, bez restartu Home Assistant.
+- SOS dziecka: gdy dom odrzuci SOS, telefon dziecka od razu pokazuje „SOS nie dotarło” z „Zadzwoń do rodziców”, zamiast czekać półtorej minuty.
+
 ## 1.9.25 — 15 listopada 2026
 
 ### Nowe
@@ -53,14 +69,3 @@
 - Nawadnianie: strefa otwarta z panelu zamyka się po najdłuższym czasie sekcji + 5 min także w trakcie trwającego cyklu.
 - „Wycisz telefon w szkole”: godzina „wyciszony od” i przypomnienie o 22:00 według czasu domu; telefon nie jest wyciszany, gdy Smart Service HA nie może zapamiętać jego poprzedniego trybu (inaczej nie dałoby się go przywrócić).
 - Panel: komunikat błędu podaje właściwy dodatek, dymek „Zgłoś problem” pokazuje opis zamiast „[object Object]”, a na karcie długa nazwa kamery nie wchodzi pod godzinę i okno urządzenia bez wykresu nie ma pustej belki.
-
-## 1.9.21 — 13 listopada 2026
-
-### Ulepszenia
-- Szybkie akcje „Sprzątanie”, „Kosiarka” i „Nawadnianie” (przy dodanym module): stan urządzeń i przyciski Start / Do stacji (robot), Koś / Do stacji (kosiarka), a dla stref nawadniania Nawadniaj / Zatrzymaj. Start robota i kosiarki jest wyłączony z powodem: w ciszy nocnej, a kosiarki także poza sezonem.
-- Szybkie akcje jako karuzela (od pięciu kafli): przewijasz palcem lub myszą w kółko, kafel na środku jest wyróżniony.
-- Widok urządzenia: praca (od kiedy, powierzchnia, czas, pokój, ostatnia praca) i materiały eksploatacyjne z czujników samego urządzenia — „WYMIEŃ” przy 15 % i mniej albo gdy urządzenie zgłasza wymianę.
-- Oś tygodnia w widoku urządzenia: prace z ostatnich 7 dni z przerwanymi, pominiętymi, deszczem i ciszą nocną, suma tygodnia i porównanie z poprzednim; „Po sezonie” dla kosiarki i nawadniania.
-- Na Starcie baner nawadniania „nawadnia · strefa”, gdy trwa nawadnianie.
-### Poprawki
-- Pytanie „Zwierzęta jadą z Wami?” przy wyjeździe działa — Smart Service HA zakłada teraz jego pomocnik.

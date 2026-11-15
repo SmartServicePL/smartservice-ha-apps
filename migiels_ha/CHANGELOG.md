@@ -1,5 +1,22 @@
 # Lista zmian
 
+## 1.15.6 — 15 listopada 2026
+
+### Nowe
+- Kocioł z EMS-ESP: przy włączonym sterowaniu MIGIELS co minutę ustawia kotłowi bieżącą temperaturę wody do grzejników, a nastawa z pokrętła kotła jest górnym limitem i wraca do Twojej wartości po wyłączeniu sterowania.
+- TRUE Zero Export: przycisk „Sprawdź odliczanie” krótką próbą sprawdza, czy przekaźnik sam wraca na sieć, a przekaźnikiem bez odliczania MIGIELS steruje tylko po Twojej zgodzie w oknie włączania.
+
+### Ulepszenia
+- Obniżenia temperatury, także Ciepła noc, pilnują wilgoci: pokój bez czujnika wilgotności nie schodzi w nocy poniżej 17 °C, z czujnikiem pokazującym suche powietrze — poniżej 16 °C, a pokój, w którym wilgotność przez dobę przekracza 60 %, nie jest obniżany, dopóki nie przeschnie.
+- Przy kotle kondensacyjnym MIGIELS liczy koszt porannego dogrzania z temperatury wody wracającej do kotła, więc obniża temperaturę tylko tam, gdzie to się naprawdę opłaca, a Autopilot mówi, dlaczego gdzieś nie obniża („zysk za mały”, „nagrzanie droższe niż oszczędność”).
+- Ciepła woda: gdy przez 6 dni woda w zasobniku ani razu nie miała 60 °C przez godzinę, grzałka z nadwyżki PV dostaje pierwszeństwo przed ładowaniem magazynu.
+- Kafel zasobnika ciepłej wody pokazuje moc grzałek zmierzoną ich licznikiem (bez licznika — szacunek ze znakiem „≈”), a okno Paneli PV pokazuje, ile energii poszło do zasobnika.
+- Okno Paneli PV pokazuje najnowszą prognozę produkcji z nazwą dostawcy i godziną („Prognoza z: Forecast.Solar · HH:MM”) — tę samą liczbę, którą podaje dostawca.
+- Grzałka zasilana z magazynu energii (DC) jest w dziennym bilansie energii osobnym odbiorcą — widać, ile wzięła z PV, z magazynu i z sieci.
+
+### Poprawki
+- Podłogówka zasilana wprost z kotła (bez mieszacza) dostaje wodę najwyżej 45 °C, a gdy sama instalacja podaje cieplejszą, administrator widzi ostrzeżenie w Diagnostyce.
+
 ## 1.15.5 — 15 listopada 2026
 
 ### Nowe
@@ -47,14 +64,3 @@
 - Autopilot ocenia próbę tylko z tego, co sam dodaje do zwykłego harmonogramu; w domu bez potwierdzonej obecności planuje same noce i co 30 dni sprawdza obecność ponownie.
 - Powiadomienie „Brak sieci — dom zasilany z rezerwy magazynu” nie przychodzi już fałszywie przy falownikach Deye: MIGIELS nie bierze ustawienia progu baterii za alarm niskiej baterii.
 - Konfiguracja: każde pytanie otwiera się w oknie krokami, tak jak w kreatorze, z podpowiedzią liczby faz z danych falownika; na telefonie kafle i okna pytań mieszczą się na ekranie.
-
-## 1.15.1 — 13 listopada 2026
-
-### Ulepszenia
-- Jeden termostat dla całego domu: zakładka „Ogrzewanie” pokazuje jego tarczę — temperaturę teraz i nastawę; nastawę zmienia administrator.
-- Wykres „Zużycie gazu w miesiącach”: miesiąc po ostatnim odczycie dostawcy ma w dymku dopisek „do najbliższego odczytu”.
-### Poprawki
-- Ostrzeżenia „Głowica nie potwierdza polecenia” i „nie grzeje mimo otwarcia” pojawiają się tylko, gdy pokój jest niedogrzany (co najmniej 0,3 °C poniżej nastawy przez 30 minut).
-- Krzywa kotła: tekst odróżnia nową krzywą, która jest jeszcze sprawdzana, od oszczędności z niższej temperatury wody grzewczej, liczonej już teraz.
-- Diagnostyka nie zgłasza już fałszywego „Kocioł nie przyjął temperatury wody grzewczej” — MIGIELS ocenia nastawę dopiero po jej wysłaniu do kotła.
-- Kreator, okno „Falownik i magazyn energii”: bez ogromnej ikony pod polami magazynu.
