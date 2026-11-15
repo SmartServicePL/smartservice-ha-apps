@@ -1,5 +1,22 @@
 # Smart Service HA — historia zmian
 
+## 1.9.25 — 15 listopada 2026
+
+### Nowe
+- W arkuszu „Goście” przy co najmniej dwóch pokojach dla gości pytanie „Gdzie śpią goście?” pozwala wybrać pokoje na czas pobytu, a MIGIELS nagrzewa tylko te pokoje.
+- Panel → ASTRA: jedna strona ustawień ASTRY z wyborem krajobrazu w dużych miniaturach (7 scen, cztery pory roku).
+
+### Ulepszenia
+- Powiadomienia po kliknięciu otwierają właściwy ekran panelu, awarie i ostrzeżenia zostają na telefonie do „Odczytane”, które usuwa je z telefonów wszystkich dorosłych, a ikona pokazuje, z której aplikacji przyszły.
+- Inteligentny robot sprzątający sprząta tylko te pokoje, w których przybyło brudu, jeśli zna je ze swojej mapy.
+- Na czas sprzątania robot sam ustawia odpowiedni tryb i siłę ssania, a po powrocie do stacji przywraca Twoje ustawienia.
+- Łączenie Smart Service HA i MIGIELS z kontem Panelu klienta jest bezpieczniejsze, bo dane połączenia przechodzą tylko między dodatkami w Twoim Home Assistant.
+- Katalog „Sprawdzone przez Smart Service”: opis integracji Solarman mówi wprost, że po dodaniu integracja sama przełącza logger falownika w tryb serwera, używając fabrycznego hasła loggera.
+
+### Poprawki
+- Robot sprzątający nie rusza w godzinach ciszy nocnej także wtedy, gdy nie wciśnięto „Dobranoc”; kosiarka i nawadnianie nie zależą od ciszy nocnej.
+- Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.
+
 ## 1.9.24 — 15 listopada 2026
 
 ### Ulepszenia
@@ -47,8 +64,3 @@
 - Na Starcie baner nawadniania „nawadnia · strefa”, gdy trwa nawadnianie.
 ### Poprawki
 - Pytanie „Zwierzęta jadą z Wami?” przy wyjeździe działa — Smart Service HA zakłada teraz jego pomocnik.
-
-## 1.9.20 — 13 listopada 2026
-
-### Zmiany
-- Wersja zgodna z MIGIELS 1.15.0 (wspólna karta: jeden cel na ekranie ogrzewania, wykres gazu w miesiącach) — bez zmian w działaniu Smart Service HA.

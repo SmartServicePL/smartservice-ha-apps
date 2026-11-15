@@ -1,5 +1,22 @@
 # Lista zmian
 
+## 1.15.5 — 15 listopada 2026
+
+### Nowe
+- W arkuszu „Goście” przy co najmniej dwóch pokojach dla gości pytanie „Gdzie śpią goście?” pozwala wybrać pokoje na czas pobytu, a MIGIELS nagrzewa tylko te pokoje.
+- ASTRA: krajobraz pod niebem do wyboru — 7 scen, każda w czterech porach roku; wybierasz go w Smart Service HA → Panel → ASTRA.
+
+### Ulepszenia
+- ASTRA pokazuje Księżyc w jego prawdziwej fazie — pełnia, kwadry i sierp — z delikatną poświatą.
+- Gdy MIGIELS steruje głowicami, blokuje przyciski na głowicach, które to umożliwiają, a w pokoju widać „Przyciski na głowicach są zablokowane. Nastawę ustaw powyżej.”; po wyłączeniu sterowania przyciski wracają do stanu sprzed sterowania.
+- Powiadomienia MIGIELS po kliknięciu otwierają właściwy ekran panelu, awarie i ostrzeżenia zostają na telefonie do „Odczytane”, a ostrzeżenia mają osobny kanał „MIGIELS — ostrzeżenia”.
+- Łączenie MIGIELS i Smart Service HA z kontem Panelu klienta jest bezpieczniejsze, bo dane połączenia przechodzą tylko między dodatkami w Twoim Home Assistant.
+
+### Poprawki
+- Ciepła noc: gdy w nocy na zewnątrz jest cieplej niż 5 °C, kocioł nie grzeje, ale pokój nigdy nie wychładza się poniżej 16 °C.
+- Gdy w trakcie okna próbnego ustawienia TRUE Zero Export zostaną usunięte albo staną się niepełne, okno kończy się od razu, a zanik sieci znów daje powiadomienie.
+- Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.
+
 ## 1.15.4 — 15 listopada 2026
 
 ### Ulepszenia
@@ -41,15 +58,3 @@
 - Krzywa kotła: tekst odróżnia nową krzywą, która jest jeszcze sprawdzana, od oszczędności z niższej temperatury wody grzewczej, liczonej już teraz.
 - Diagnostyka nie zgłasza już fałszywego „Kocioł nie przyjął temperatury wody grzewczej” — MIGIELS ocenia nastawę dopiero po jej wysłaniu do kotła.
 - Kreator, okno „Falownik i magazyn energii”: bez ogromnej ikony pod polami magazynu.
-
-## 1.15.0 — 13 listopada 2026
-
-### Ulepszenia
-- Ogrzewanie: jasny cel na ekranie. Gdy obniżenie trwa tylko w części pokoi, widać, w których i do ilu stopni. Kafel kotła pokazuje temperaturę wody i od kiedy grzeje, a jedno zdanie wyjaśnia, dlaczego kocioł pracuje na małej mocy.
-- Gdy dom pracuje bez sieci z Twojego wyboru (falownik nie korzysta z sieci albo rozłącznik otwarty), MIGIELS nie przeszkadza powiadomieniami przy przełączeniach, ale ostrzega — także nocą — gdy magazyn stoi na rezerwie, zanim dom zostanie bez prądu.
-- Napięcie sieci przypisane w kreatorze służy jako zapasowy znak, czy sieć jest (gdy falownik nie podaje stanu sieci).
-- Wykres „Zużycie gazu w miesiącach” przypisuje zużycie do właściwych miesięcy według odczytów dostawcy; szacunek oznaczony „≈”.
-- Jeden termostat dla całego domu: pokoje z grzejnikami i zwykłymi głowicami dostają zalecaną nastawę głowicy, liczoną od bieżącej nastawy termostatu domu i zmieniającą się razem z nią.
-- Niebo ASTRA: wyraźniejsze chmury, bez smug i linii przy horyzoncie i o zachodzie; jakość obrazu dopasowuje się do urządzenia (na komputerze najwyższa, na tablecie płynnie).
-### Poprawki
-- Magazyn ładowany powoli nie jest już błędnie uznawany za nieaktualny odczyt.
