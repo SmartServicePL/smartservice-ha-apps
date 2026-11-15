@@ -1,5 +1,15 @@
 # Smart Service HA — historia zmian
 
+## 1.9.24 — 15 listopada 2026
+
+### Ulepszenia
+- Pralka i suszarka: karta pokazuje, o której mniej więcej skończy się pranie lub suszenie („koniec ok. HH:MM”), gdy znane są już co najmniej 3 cykle.
+- „Mój bank” na telefonie dziecka (widok KIDS Mobile): ile czasu można teraz wykorzystać, ile jest w banku i ostatnie zmiany.
+- Wybrane pole w ustawieniach i oknach Smart Service HA ma cienką obwódkę w kolorze akcentu zamiast białej ramki.
+
+### Poprawki
+- Alarm: gdy domownik próbuje sam ustawić pierwszy PIN, widzi jasny komunikat „Pierwszy PIN ustawia administrator.”.
+
 ## 1.9.23 — 14 listopada 2026
 
 ### Ulepszenia
@@ -42,15 +52,3 @@
 
 ### Zmiany
 - Wersja zgodna z MIGIELS 1.15.0 (wspólna karta: jeden cel na ekranie ogrzewania, wykres gazu w miesiącach) — bez zmian w działaniu Smart Service HA.
-
-## 1.9.19 — 13 listopada 2026
-
-### Ulepszenia
-- Pomoc i konto: stan licencji MIGIELS z przyciskiem zakupu albo przedłużenia.
-- Karmnik PetKit: „Nakarm” w szybkich akcjach — liczba porcji na przewijanym pasku (przy modelach na gramy z wagą), wybór pojemnika z poziomem karmy, podgląd z kamery karmnika, przycisk „Wydaj N porcji”. Na Starcie karmnik pojawia się tylko, gdy kończy się karma.
-- Wyjazd: pytanie „Zwierzęta jadą z Wami?” — gdy jadą, bez powiadomień o karmie i żwirku, a harmonogram karmnika jest wstrzymany (gdy integracja na to pozwala).
-- Cisza nocna ma własną, wyróżnioną kartę na górze Powiadomień: stan na teraz, co wstrzymuje, a godziny wybierasz przewijanymi bębnami z „OK”.
-- Oświetlenie zewnętrzne: „Załóż automatyzację” działa.
-- Oświetlenie: tryb „Automatycznie” — bez okien światło przy każdym ruchu, z oknami próg z historii czujnika.
-### Poprawki
-- Karta oferty MIGIELS bez ceny — cena i zakup tylko w panelu Smart Service.

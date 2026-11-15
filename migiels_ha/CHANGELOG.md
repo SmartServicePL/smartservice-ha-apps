@@ -1,5 +1,14 @@
 # Lista zmian
 
+## 1.15.4 — 15 listopada 2026
+
+### Ulepszenia
+- Pola w kreatorze i w oknach konfiguracji mają kolor karty zamiast czarnego tła, a wybrane pole ma cienką obwódkę w kolorze akcentu.
+- „Co dokupić” w kreatorze prowadzi na wspólną stronę polecanych urządzeń Smart Service.
+
+### Poprawki
+- Na telewizorze przez Google Cast panel MIGIELS działa zawsze tylko do podglądu — niczego nie da się tam przypadkiem przełączyć.
+
 ## 1.15.3 — 14 listopada 2026
 
 ### Ulepszenia
@@ -44,19 +53,3 @@
 - Niebo ASTRA: wyraźniejsze chmury, bez smug i linii przy horyzoncie i o zachodzie; jakość obrazu dopasowuje się do urządzenia (na komputerze najwyższa, na tablecie płynnie).
 ### Poprawki
 - Magazyn ładowany powoli nie jest już błędnie uznawany za nieaktualny odczyt.
-
-## 1.14.19 — 13 listopada 2026
-
-### Ulepszenia
-- W Home Assistant pojawia się „Licencja MIGIELS” — stan licencji i koniec okresu próbnego.
-- Pasek licencji w MIGIELS: przypomnienie przed końcem okresu próbnego i przycisk „Kup MIGIELS” / „Przedłuż”.
-- TRUE Zero Export w instalacjach z trójfazowym falownikiem: moc i napięcie na każdej fazie, jeden stycznik odłącza 3 fazy.
-- Konfigurator pyta, ile faz ma falownik (osobno od licznika) — a gdy się da, sam to podpowiada.
-
-### Poprawki
-- Stały odczyt magazynu przy niskim naładowaniu i przy rezerwie nie jest już błędnie uznawany za nieaktualny — MIGIELS uczy się, jak szybko zmienia się poziom w Twoim magazynie.
-- Koniec okresu próbnego jest ten sam w MIGIELS i w panelu Smart Service.
-- „Sieć odłączona” nie zgłasza już chwilowego błędu przekaźnika przy działającej sieci — to tylko wpis w Diagnostyce; „Sieć wróciła” przychodzi raz. Prawdziwy brak sieci (także blackout przy załączonym przekaźniku) zgłaszany jak dotąd.
-- Rezerwa magazynu Deye bez sieci to najniższy poziom z programów czasowych falownika — ta sama o każdej porze, bez nadmiaru ostrzeżeń.
-- TRUE Zero Export: po zadziałaniu zabezpieczenia przekaźnika automatyzacja nigdy sama nie podłącza sieci — także gdy MIGIELS chwilowo nie odpowiada.
-- Wyłączenie sterowania TRUE Zero Export kończy się podglądem po potwierdzeniu, że dom jest na sieci.
