@@ -1,5 +1,11 @@
 # Smart Service HA — historia zmian
 
+## 1.9.27 — 15 listopada 2026
+
+### Poprawki
+- Krajobraz ASTRY: sceny „Gdańsk” i „Tczew” zostały usunięte — kto miał którąś wybraną, ma teraz „Las i łąka”.
+- Na szerokich monitorach krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania.
+
 ## 1.9.26 — 15 listopada 2026
 
 ### Nowe
@@ -58,14 +64,3 @@
 
 ### Po aktualizacji
 - Sprawdź w Bezpieczeństwie, kto ma PIN, i usuń te, których nie nadawałeś.
-
-## 1.9.22 — 14 listopada 2026
-
-### Poprawki
-- Wyjazd ze zwierzętami: harmonogram karmnika PetKit wraca po wyjeździe także po restarcie Home Assistant lub chwilowym braku połączenia z PetKit (nie wraca, jeśli zmieniłeś go sam).
-- Robot: długi opis stanu (problem razem z przeszkodą) nie przerywa już automatyzacji — powiadomienie „wymaga uwagi” i samodzielne wznawianie działają.
-- Robot: „Usuń moduł” i „Przywróć” nie usuwają połączeń pokoi zrobionych przez Ciebie i działają także po usunięciu robota z Home Assistant; gdy Home Assistant chwilowo nie odpowiada, zatrzymują się z komunikatem.
-- Kosiarka Worx: po przycięciu krawędzi koszenie całego trawnika rusza tylko za dnia i poza ciszą nocną; krótki wyjazd z bazy (odświeżenie stanu robota) nie odbywa się w nocy ani zimą.
-- Nawadnianie: strefa otwarta z panelu zamyka się po najdłuższym czasie sekcji + 5 min także w trakcie trwającego cyklu.
-- „Wycisz telefon w szkole”: godzina „wyciszony od” i przypomnienie o 22:00 według czasu domu; telefon nie jest wyciszany, gdy Smart Service HA nie może zapamiętać jego poprzedniego trybu (inaczej nie dałoby się go przywrócić).
-- Panel: komunikat błędu podaje właściwy dodatek, dymek „Zgłoś problem” pokazuje opis zamiast „[object Object]”, a na karcie długa nazwa kamery nie wchodzi pod godzinę i okno urządzenia bez wykresu nie ma pustej belki.

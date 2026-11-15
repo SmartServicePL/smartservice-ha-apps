@@ -1,5 +1,12 @@
 # Lista zmian
 
+## 1.15.7 — 15 listopada 2026
+
+### Poprawki
+- Na szerokich monitorach (21:9 i szerszych) krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania, a dół obrazu jest widoczny w całości.
+- TRUE Zero Export: przycisk „Przygotuj (podgląd)” działa także przy pierwszym przygotowaniu automatyzacji.
+- TRUE Zero Export: pomocnik zabezpieczenia powstaje sam przy włączeniu sterowania.
+
 ## 1.15.6 — 15 listopada 2026
 
 ### Nowe
@@ -54,13 +61,3 @@
 - Chwilowy błąd odczytu ustawień falownika (np. nagłe 0 albo „niedostępne”) nie zmienia już rezerwy ani planu — przez 15 minut MIGIELS bierze ostatnią dobrą wartość, a Diagnostyka pokazuje „Odczyt ustawień falownika niepewny”.
 - Wyjście ze sterowania ogrzewaniem: przełącznik wyłączony przez Ciebie w trakcie wyjścia nie trafia już do „Nie wróciło” i zostaje wyłączony.
 - Na telefonie harmonogram pokazuje nazwę dni nad godzinami, a kreator i Konfiguracja podpowiadają, że wygodniej skonfigurować MIGIELS na komputerze albo tablecie; opis głowic elektronicznych w kreatorze mówi, że MIGIELS ustawia zawór tylko w głowicach, które pozwalają ustawić jego otwarcie.
-
-## 1.15.2 — 14 listopada 2026
-
-### Poprawki
-- Koszt ogrzewania gazem liczony jest z tych samych kWh co na fakturze (z ciepła spalania gazu) — wcześniej wychodził o około 10 % za niski; porównanie z gazomierzem i „Zużycie gazu w miesiącach” też. Porównanie z gazomierzem zbiera dane od nowa.
-- „Zaoszczędziłeś z MIGIELS”: oszczędność z grzałek nie jest już zawyżona, kwoty miesięcy sumują się do kwoty od początku, a wartość szacowana ma znak „≈”.
-- Wyjście ze sterowania ogrzewaniem i oddanie ogrzewania kotłowi nigdy nie wyłączają grzania: przełącznik ogrzewania wyłączony przez MIGIELS wraca na „włączony” (także po ponownym uruchomieniu), a wyłączony przez Ciebie zostaje wyłączony.
-- Autopilot ocenia próbę tylko z tego, co sam dodaje do zwykłego harmonogramu; w domu bez potwierdzonej obecności planuje same noce i co 30 dni sprawdza obecność ponownie.
-- Powiadomienie „Brak sieci — dom zasilany z rezerwy magazynu” nie przychodzi już fałszywie przy falownikach Deye: MIGIELS nie bierze ustawienia progu baterii za alarm niskiej baterii.
-- Konfiguracja: każde pytanie otwiera się w oknie krokami, tak jak w kreatorze, z podpowiedzią liczby faz z danych falownika; na telefonie kafle i okna pytań mieszczą się na ekranie.
