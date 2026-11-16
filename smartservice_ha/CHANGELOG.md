@@ -1,5 +1,16 @@
 # Smart Service HA — historia zmian
 
+## 1.9.29 — 16 listopada 2026
+
+### Ulepszenia
+- Panel nie ma już górnej belki: logo jest nad menu, a ustawienia MIGIELS są w menu bocznym pod pozycją MIGIELS.
+
+### Poprawki
+- Inteligentne sprzątanie znów samo uruchamia robota. W wersjach 1.9.26–1.9.28 automatyzacja robota przestawała działać po ponownym uruchomieniu Home Assistanta.
+
+### Po aktualizacji
+- Nic do zrobienia — automatyzacje robotów odświeżą się same.
+
 ## 1.9.28 — 16 listopada 2026
 
 ### Nowe
@@ -60,13 +71,3 @@
 ### Poprawki
 - Robot sprzątający nie rusza w godzinach ciszy nocnej także wtedy, gdy nie wciśnięto „Dobranoc”; kosiarka i nawadnianie nie zależą od ciszy nocnej.
 - Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.
-
-## 1.9.24 — 15 listopada 2026
-
-### Ulepszenia
-- Pralka i suszarka: karta pokazuje, o której mniej więcej skończy się pranie lub suszenie („koniec ok. HH:MM”), gdy znane są już co najmniej 3 cykle.
-- „Mój bank” na telefonie dziecka (widok KIDS Mobile): ile czasu można teraz wykorzystać, ile jest w banku i ostatnie zmiany.
-- Wybrane pole w ustawieniach i oknach Smart Service HA ma cienką obwódkę w kolorze akcentu zamiast białej ramki.
-
-### Poprawki
-- Alarm: gdy domownik próbuje sam ustawić pierwszy PIN, widzi jasny komunikat „Pierwszy PIN ustawia administrator.”.

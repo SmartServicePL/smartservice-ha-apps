@@ -1,5 +1,13 @@
 # Lista zmian
 
+## 1.15.9 — 16 listopada 2026
+
+### Ulepszenia
+- W Smart Service HA ustawienia MIGIELS są w menu bocznym pod pozycją MIGIELS, a nie w osobnym rzędzie zakładek.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.15.8 — 16 listopada 2026
 
 ### Nowe
@@ -57,12 +65,3 @@
 - Ciepła noc: gdy w nocy na zewnątrz jest cieplej niż 5 °C, kocioł nie grzeje, ale pokój nigdy nie wychładza się poniżej 16 °C.
 - Gdy w trakcie okna próbnego ustawienia TRUE Zero Export zostaną usunięte albo staną się niepełne, okno kończy się od razu, a zanik sieci znów daje powiadomienie.
 - Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.
-
-## 1.15.4 — 15 listopada 2026
-
-### Ulepszenia
-- Pola w kreatorze i w oknach konfiguracji mają kolor karty zamiast czarnego tła, a wybrane pole ma cienką obwódkę w kolorze akcentu.
-- „Co dokupić” w kreatorze prowadzi na wspólną stronę polecanych urządzeń Smart Service.
-
-### Poprawki
-- Na telewizorze przez Google Cast panel MIGIELS działa zawsze tylko do podglądu — niczego nie da się tam przypadkiem przełączyć.
