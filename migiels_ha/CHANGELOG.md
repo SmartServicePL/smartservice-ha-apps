@@ -1,5 +1,22 @@
 # Lista zmian
 
+## 1.15.8 — 16 listopada 2026
+
+### Nowe
+- Diagnostyka informuje administratora, gdy prognoza produkcji PV stale myli się w dni słoneczne i pochmurne, co zwykle znaczy złe ustawienia instalacji w integracji prognozy (MIGIELS niczego w niej nie zmienia).
+
+### Ulepszenia
+- Prognoza PV: plan prowadzi prognoza, która w Twoim domu myli się najmniej, a poprawka MIGIELS jest liczona osobno dla dni słonecznych i pochmurnych i działa tylko wtedy, gdy zmniejsza błąd dobowy co najmniej o 10 %.
+- Korekta temperatury nie zaczyna nauki od nowa po dodaniu innej prognozy w kreatorze ani po wymianie urządzenia, a najwyższą i najniższą temperaturę na kolejne dni poprawia osobno dla każdej prognozy.
+- Szansa opadu w prognozie godzinowej dopasowuje się do deszczomierza domu, gdy po co najmniej 200 godzinach pomiarów widać, że jest wtedy trafniejsza.
+- Ikona pogody pokazuje deszcz od 0,2 mm w godzinie i od 1 mm w dniu, dzień z krótkimi opadami ma ikonę „przelotny deszcz”, a dzień i noc zmieniają się według wysokości słońca nad Twoim domem.
+- Prognoza na 12 godzin mieści się w kaflu na każdej szerokości ekranu i pokazuje opad pod każdą godziną z opadem.
+- Ekran ładowania ASTRY znika płynnie dopiero wtedy, gdy cały widok jest gotowy, bez mignięcia innego widoku.
+- Niebo ASTRY porusza się także przy włączonym w urządzeniu ograniczeniu ruchu — wtedy stoi tylko krajobraz.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.15.7 — 15 listopada 2026
 
 ### Poprawki
@@ -49,15 +66,3 @@
 
 ### Poprawki
 - Na telewizorze przez Google Cast panel MIGIELS działa zawsze tylko do podglądu — niczego nie da się tam przypadkiem przełączyć.
-
-## 1.15.3 — 14 listopada 2026
-
-### Ulepszenia
-- Gdy magazyn energii jest pełny, a falownik zaczyna ograniczać produkcję PV, MIGIELS próbuje włączyć kolejny stopień grzałki, żeby ta energia nie przepadała — przy poborze z sieci lub z magazynu grzałka od razu wraca.
-
-### Poprawki
-- Oszczędność przy buforze z wężownicą liczona jedną regułą na każdym ekranie, także za poprzednie miesiące — kwoty ogrzewania i ciepłej wody mogą się zmienić, a drobne ujemne kwoty pokazujemy jako 0 zł.
-- Grzałki: postój, w którym termostat grzałki odciął grzanie, nie jest już liczony jako oszczędność z nadwyżki, a karta ciepłej wody nie pokazuje nocnego „z magazynu” z samego postoju; kwoty sprzed aktualizacji zostają bez przeliczenia.
-- Chwilowy błąd odczytu ustawień falownika (np. nagłe 0 albo „niedostępne”) nie zmienia już rezerwy ani planu — przez 15 minut MIGIELS bierze ostatnią dobrą wartość, a Diagnostyka pokazuje „Odczyt ustawień falownika niepewny”.
-- Wyjście ze sterowania ogrzewaniem: przełącznik wyłączony przez Ciebie w trakcie wyjścia nie trafia już do „Nie wróciło” i zostaje wyłączony.
-- Na telefonie harmonogram pokazuje nazwę dni nad godzinami, a kreator i Konfiguracja podpowiadają, że wygodniej skonfigurować MIGIELS na komputerze albo tablecie; opis głowic elektronicznych w kreatorze mówi, że MIGIELS ustawia zawór tylko w głowicach, które pozwalają ustawić jego otwarcie.

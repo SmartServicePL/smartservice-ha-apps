@@ -102,6 +102,8 @@ profile migiels_ha flags=(attach_disconnected,mediate_deleted) {
   /data/migiels-panel-rok.json.tmp rw,
   /data/pin-propozycja.json rw,
   /data/pin-propozycja.json.tmp rw,
+  /data/konfiguratory.json rw,
+  /data/konfiguratory.json.tmp rw,
   /data/migiels-mqtt-ostatni.json rw,
   /data/migiels-mqtt-ostatni.json.tmp rw,
   /data/migiels-naprawy.json rw,

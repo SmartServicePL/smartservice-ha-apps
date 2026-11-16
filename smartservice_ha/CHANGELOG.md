@@ -1,5 +1,27 @@
 # Smart Service HA — historia zmian
 
+## 1.9.28 — 16 listopada 2026
+
+### Nowe
+- Kreator „Ustaw alarm”: po instalacji administrator przechodzi Bezpieczeństwo krok po kroku (centrala, czujniki, zagrożenia, syrena, domownicy, czasy, powiadomienia), z propozycjami z danych domu, a każdy krok zapisuje się dopiero po „Dalej”.
+- Robot sprzątający sam dobiera wodę mopa, liczbę przejść, trasę i siłę ssania — ciszej, gdy ktoś jest na piętrze, bez dodatkowej mocy przy słabej baterii — a po sprzątaniu przywraca Twoje ustawienia.
+- Ogrzewanie podpowiada pokoje rzadko używane: gdy czujnik przez co najmniej 10 z ostatnich 14 dni nikogo w ciągu dnia nie wykrył, możesz obniżyć w tym pokoju temperaturę w harmonogramie.
+- Nowe światła, rolety i inne urządzenia dodane w Home Assistant do obszaru pokoju same pojawiają się w tym pokoju na panelu.
+
+### Ulepszenia
+- Bezpieczeństwo bez centrali alarmowej mówi to jednym zdaniem z przyciskiem instalacji centrali, a dodawanie czujników i syren czeka, aż centrala będzie gotowa (zapisane czujniki zostają).
+- Alarm można włączyć już z jednym czujnikiem dowolnego rodzaju — z syreną wyje, bez syreny wysyła powiadomienia.
+- Przy czujnikach i syrenach w Bezpieczeństwie widać nazwę pokoju z Home Assistant.
+- Pogoda w panelu i w ASTRZE pokazuje nowy stan „przelotny deszcz”.
+- Ekran ładowania ASTRY znika płynnie dopiero wtedy, gdy cały widok jest gotowy, bez mignięcia innego widoku.
+- Niebo ASTRY porusza się także przy włączonym w urządzeniu ograniczeniu ruchu — wtedy stoi tylko krajobraz.
+
+### Poprawki
+- Urządzenia: gdy odczyt się nie uda, panel próbuje ponownie po 30 sekundach, zamiast bez przerwy odświeżać ekran.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.9.27 — 15 listopada 2026
 
 ### Poprawki
@@ -48,19 +70,3 @@
 
 ### Poprawki
 - Alarm: gdy domownik próbuje sam ustawić pierwszy PIN, widzi jasny komunikat „Pierwszy PIN ustawia administrator.”.
-
-## 1.9.23 — 14 listopada 2026
-
-### Ulepszenia
-- Kosiarka Worx Vision Cloud dostaje swój harmonogram koszenia.
-- Powiadomienia robota i kosiarki: każde urządzenie osobno, błędy z dźwiękiem, a „wymaga uwagi” znika dopiero, gdy urządzenie znów pracuje; gdy zawór nawadniania się nie zamknie, dostajesz od razu powiadomienie z dźwiękiem.
-
-### Poprawki
-- Alarm: pierwszy PIN domownika ustawia teraz tylko administrator.
-- Usunięty albo chwilowo niedostępny telefon nie zatrzymuje już powiadomień do pozostałych domowników ani pracy robota.
-- Aktualizacja MIGIELS nie rusza przy uzbrojonym alarmie.
-- Bez MIGIELS menu MIGIELS pokazuje ofertę zamiast „Zaktualizuj”, komunikat o ponownym uruchomieniu Home Assistant znika po restarcie, a stan połączenia z kontem zmienia się od razu po „Połącz” i „Rozłącz”.
-- Na telefonie i tablecie napisy w menu, w ustawieniach modułów i na kaflach nie są już ucinane ani nie nachodzą na siebie; Pokoje z wieloma piętrami nie przesuwają się w bok.
-
-### Po aktualizacji
-- Sprawdź w Bezpieczeństwie, kto ma PIN, i usuń te, których nie nadawałeś.

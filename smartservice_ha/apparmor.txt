@@ -60,6 +60,8 @@ profile smartservice_ha flags=(attach_disconnected,mediate_deleted) {
   /data/smartservice-integracje.json rw,
   /data/pin-propozycja.json rw,
   /data/pin-propozycja.json.tmp rw,
+  /data/konfiguratory.json rw,
+  /data/konfiguratory.json.tmp rw,
   /homeassistant/www/ rw,
   /homeassistant/www/migiels/ rw,
   /homeassistant/www/migiels/* rw,
