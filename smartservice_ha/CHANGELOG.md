@@ -1,5 +1,19 @@
 # Smart Service HA — historia zmian
 
+## 1.9.30 — 16 listopada 2026
+
+### Ulepszenia
+- Domownicy: administrator ustawia każdej osobie, które szybkie akcje widzi na telefonie i w jakiej kolejności.
+- Szybkie akcje na telefonie bez przeskakującej karuzeli: trzy najważniejsze kafle i „Więcej”, które rozwija resztę pod spodem.
+- W opisie modułu robota nowy wiersz „Ustawienia robota”: na czas sprzątania Smart Service HA dobiera tryb, ssanie, wodę mopa, przejazdy i trasę, a po powrocie do stacji wracają Twoje ustawienia.
+
+### Poprawki
+- Po animacji logo ASTRA od razu pokazuje gotowy, właściwy widok, bez chwilowego widoku Standard.
+- Gdy automatyzacji modułu nie da się odświeżyć po aktualizacji, Smart Service HA nie ponawia już tego w nieskończoność i zostawia jedno jasne ostrzeżenie.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.9.29 — 16 listopada 2026
 
 ### Ulepszenia
@@ -54,20 +68,3 @@
 ### Poprawki
 - „Zainstaluj MIGIELS” i „Zainstaluj Bank czasu” działają od razu po instalacji Smart Service HA, bez restartu Home Assistant.
 - SOS dziecka: gdy dom odrzuci SOS, telefon dziecka od razu pokazuje „SOS nie dotarło” z „Zadzwoń do rodziców”, zamiast czekać półtorej minuty.
-
-## 1.9.25 — 15 listopada 2026
-
-### Nowe
-- W arkuszu „Goście” przy co najmniej dwóch pokojach dla gości pytanie „Gdzie śpią goście?” pozwala wybrać pokoje na czas pobytu, a MIGIELS nagrzewa tylko te pokoje.
-- Panel → ASTRA: jedna strona ustawień ASTRY z wyborem krajobrazu w dużych miniaturach (7 scen, cztery pory roku).
-
-### Ulepszenia
-- Powiadomienia po kliknięciu otwierają właściwy ekran panelu, awarie i ostrzeżenia zostają na telefonie do „Odczytane”, które usuwa je z telefonów wszystkich dorosłych, a ikona pokazuje, z której aplikacji przyszły.
-- Inteligentny robot sprzątający sprząta tylko te pokoje, w których przybyło brudu, jeśli zna je ze swojej mapy.
-- Na czas sprzątania robot sam ustawia odpowiedni tryb i siłę ssania, a po powrocie do stacji przywraca Twoje ustawienia.
-- Łączenie Smart Service HA i MIGIELS z kontem Panelu klienta jest bezpieczniejsze, bo dane połączenia przechodzą tylko między dodatkami w Twoim Home Assistant.
-- Katalog „Sprawdzone przez Smart Service”: opis integracji Solarman mówi wprost, że po dodaniu integracja sama przełącza logger falownika w tryb serwera, używając fabrycznego hasła loggera.
-
-### Poprawki
-- Robot sprzątający nie rusza w godzinach ciszy nocnej także wtedy, gdy nie wciśnięto „Dobranoc”; kosiarka i nawadnianie nie zależą od ciszy nocnej.
-- Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.

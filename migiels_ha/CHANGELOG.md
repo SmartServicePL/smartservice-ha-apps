@@ -1,5 +1,21 @@
 # Lista zmian
 
+## 1.15.10 — 16 listopada 2026
+
+### Ulepszenia
+- Autopilot ciepła: w domach z grzejnikami, gdzie pełne obniżenie nocne się nie opłaca, obniża w nocy o 0,5 °C — tylko gdy rano dogrzewa na czas i wychodzi na plus. W Diagnostyce widać plan nocy albo powód, dlaczego nie.
+- Szybkie akcje na telefonie bez przeskakującej karuzeli: trzy najważniejsze kafle i „Więcej”, które rozwija resztę pod spodem.
+- Rolety można ułożyć po swojemu: „Ułóż” w widoku Rolety zmienia kolejność pokoi i rolet oraz ukrywa te, których nie potrzebujesz; układ jest zapamiętany na wszystkich Twoich urządzeniach.
+- Szybkie akcje na telefonie pokazują się każdej osobie w wyborze i kolejności ustawionych przez administratora w Smart Service HA.
+
+### Poprawki
+- Po animacji logo ASTRA od razu pokazuje gotowy, właściwy widok, bez chwilowego widoku Standard.
+- Grzałki zasilane nadwyżką z paneli nie wyłączają się już w dzień, gdy magazyn zgłasza stan naładowania tylko przy zmianie o cały procent.
+- TRUE Zero Export szybciej uznaje dane magazynu za aktualne, gdy magazyn stoi, a przy dużym poborze nadal czeka na świeży odczyt.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.15.9 — 16 listopada 2026
 
 ### Ulepszenia
@@ -48,20 +64,3 @@
 
 ### Poprawki
 - Podłogówka zasilana wprost z kotła (bez mieszacza) dostaje wodę najwyżej 45 °C, a gdy sama instalacja podaje cieplejszą, administrator widzi ostrzeżenie w Diagnostyce.
-
-## 1.15.5 — 15 listopada 2026
-
-### Nowe
-- W arkuszu „Goście” przy co najmniej dwóch pokojach dla gości pytanie „Gdzie śpią goście?” pozwala wybrać pokoje na czas pobytu, a MIGIELS nagrzewa tylko te pokoje.
-- ASTRA: krajobraz pod niebem do wyboru — 7 scen, każda w czterech porach roku; wybierasz go w Smart Service HA → Panel → ASTRA.
-
-### Ulepszenia
-- ASTRA pokazuje Księżyc w jego prawdziwej fazie — pełnia, kwadry i sierp — z delikatną poświatą.
-- Gdy MIGIELS steruje głowicami, blokuje przyciski na głowicach, które to umożliwiają, a w pokoju widać „Przyciski na głowicach są zablokowane. Nastawę ustaw powyżej.”; po wyłączeniu sterowania przyciski wracają do stanu sprzed sterowania.
-- Powiadomienia MIGIELS po kliknięciu otwierają właściwy ekran panelu, awarie i ostrzeżenia zostają na telefonie do „Odczytane”, a ostrzeżenia mają osobny kanał „MIGIELS — ostrzeżenia”.
-- Łączenie MIGIELS i Smart Service HA z kontem Panelu klienta jest bezpieczniejsze, bo dane połączenia przechodzą tylko między dodatkami w Twoim Home Assistant.
-
-### Poprawki
-- Ciepła noc: gdy w nocy na zewnątrz jest cieplej niż 5 °C, kocioł nie grzeje, ale pokój nigdy nie wychładza się poniżej 16 °C.
-- Gdy w trakcie okna próbnego ustawienia TRUE Zero Export zostaną usunięte albo staną się niepełne, okno kończy się od razu, a zanik sieci znów daje powiadomienie.
-- Na telewizorze panel zostaje tylko do podglądu także wtedy, gdy Home Assistant zmieni widok albo odświeży kartę.
