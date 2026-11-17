@@ -1,5 +1,16 @@
 # Smart Service HA — historia zmian
 
+## 1.9.31 — 17 listopada 2026
+
+### Nowe
+- Sygnał życia (Bezpieczeństwo → Alarm): gdy dom przestanie odpowiadać (brak prądu, internetu albo awaria Home Assistant), osoby z listy — do 5 adresów — dostaną e-mail po ok. 15 minutach. To pomoc, a nie całodobowy monitoring. Domyślnie wyłączone, włącza administrator.
+
+### Ulepszenia
+- Ochrona okresu próbnego: do konta Smart Service trafia tylko skrót identyfikatora urządzenia, z którego nie da się odtworzyć oryginalnych danych. Służy wyłącznie ochronie okresu próbnego.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.9.30 — 16 listopada 2026
 
 ### Ulepszenia
@@ -52,19 +63,3 @@
 ### Poprawki
 - Krajobraz ASTRY: sceny „Gdańsk” i „Tczew” zostały usunięte — kto miał którąś wybraną, ma teraz „Las i łąka”.
 - Na szerokich monitorach krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania.
-
-## 1.9.26 — 15 listopada 2026
-
-### Nowe
-- Panel w menu bocznym Home Assistant nazywa się teraz „ASTRA” (widoki ASTRA Mobile na telefonie, ASTRA Desktop i ASTRA Standard na komputerze i tablecie); nazwa nadana przez Ciebie zostaje bez zmian.
-- W zakładce MIGIELS przycisk „Zainstaluj” / „Wypróbuj 90 dni” instaluje MIGIELS od razu, z postępem w tym samym miejscu.
-- Bezpieczeństwo: PIN pod przymusem działa dokładnie jak zwykły PIN domownika, a domownikom i zaufanym telefonom, które są poza domem, wysyła cichy alarm.
-- Syrenę można podłączyć przez przekaźnik — wybierasz go w Bezpieczeństwo → Alarm → Syrena.
-
-### Ulepszenia
-- Po pierwszej instalacji Smart Service HA sam pojawia się w menu bocznym Home Assistant.
-- Powiadomienia o koszeniu mają czytelniejsze tytuły i mówią, co zrobić.
-
-### Poprawki
-- „Zainstaluj MIGIELS” i „Zainstaluj Bank czasu” działają od razu po instalacji Smart Service HA, bez restartu Home Assistant.
-- SOS dziecka: gdy dom odrzuci SOS, telefon dziecka od razu pokazuje „SOS nie dotarło” z „Zadzwoń do rodziców”, zamiast czekać półtorej minuty.

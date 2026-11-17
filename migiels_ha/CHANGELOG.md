@@ -1,5 +1,19 @@
 # Lista zmian
 
+## 1.15.11 — 17 listopada 2026
+
+### Ulepszenia
+- Węzeł cieplny Danfoss ECL: gdy zmienisz nastawę na sterowniku, MIGIELS szanuje ją przez 2 doby, potem wraca do sterowania od tej wartości i nigdy jej nie przekracza. Nastawy są zapisywane w kolejności, którą regulator przyjmuje, a po odrzuconym zapisie MIGIELS próbuje ponownie raz, po dobie.
+- Bez połączenia z kontem Smart Service MIGIELS działa teraz do 14 dni (wcześniej 7).
+- Okres próbny jest liczony odpornie na cofnięcie zegara i przerwy w połączeniu.
+
+### Poprawki
+- Węzeł cieplny Danfoss ECL: dzienna zmiana nastaw idzie codziennie o tej samej porze (wcześniej mogła wypaść co drugi dzień).
+- Powiadomienie o braku sieci i pracy z rezerwy magazynu przychodzi teraz od razu także w ciszy nocnej.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.15.10 — 16 listopada 2026
 
 ### Ulepszenia
@@ -47,20 +61,3 @@
 - Na szerokich monitorach (21:9 i szerszych) krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania, a dół obrazu jest widoczny w całości.
 - TRUE Zero Export: przycisk „Przygotuj (podgląd)” działa także przy pierwszym przygotowaniu automatyzacji.
 - TRUE Zero Export: pomocnik zabezpieczenia powstaje sam przy włączeniu sterowania.
-
-## 1.15.6 — 15 listopada 2026
-
-### Nowe
-- Kocioł z EMS-ESP: przy włączonym sterowaniu MIGIELS co minutę ustawia kotłowi bieżącą temperaturę wody do grzejników, a nastawa z pokrętła kotła jest górnym limitem i wraca do Twojej wartości po wyłączeniu sterowania.
-- TRUE Zero Export: przycisk „Sprawdź odliczanie” krótką próbą sprawdza, czy przekaźnik sam wraca na sieć, a przekaźnikiem bez odliczania MIGIELS steruje tylko po Twojej zgodzie w oknie włączania.
-
-### Ulepszenia
-- Obniżenia temperatury, także Ciepła noc, pilnują wilgoci: pokój bez czujnika wilgotności nie schodzi w nocy poniżej 17 °C, z czujnikiem pokazującym suche powietrze — poniżej 16 °C, a pokój, w którym wilgotność przez dobę przekracza 60 %, nie jest obniżany, dopóki nie przeschnie.
-- Przy kotle kondensacyjnym MIGIELS liczy koszt porannego dogrzania z temperatury wody wracającej do kotła, więc obniża temperaturę tylko tam, gdzie to się naprawdę opłaca, a Autopilot mówi, dlaczego gdzieś nie obniża („zysk za mały”, „nagrzanie droższe niż oszczędność”).
-- Ciepła woda: gdy przez 6 dni woda w zasobniku ani razu nie miała 60 °C przez godzinę, grzałka z nadwyżki PV dostaje pierwszeństwo przed ładowaniem magazynu.
-- Kafel zasobnika ciepłej wody pokazuje moc grzałek zmierzoną ich licznikiem (bez licznika — szacunek ze znakiem „≈”), a okno Paneli PV pokazuje, ile energii poszło do zasobnika.
-- Okno Paneli PV pokazuje najnowszą prognozę produkcji z nazwą dostawcy i godziną („Prognoza z: Forecast.Solar · HH:MM”) — tę samą liczbę, którą podaje dostawca.
-- Grzałka zasilana z magazynu energii (DC) jest w dziennym bilansie energii osobnym odbiorcą — widać, ile wzięła z PV, z magazynu i z sieci.
-
-### Poprawki
-- Podłogówka zasilana wprost z kotła (bez mieszacza) dostaje wodę najwyżej 45 °C, a gdy sama instalacja podaje cieplejszą, administrator widzi ostrzeżenie w Diagnostyce.
