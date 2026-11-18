@@ -71,6 +71,5 @@ profile smartservice_ha flags=(attach_disconnected,mediate_deleted) {
   /dev/null rw,
   /dev/urandom r,
   /etc/{hosts,hostname,resolv.conf,nsswitch.conf,ssl/**} r,
-  /etc/machine-id r,
   /proc/sys/kernel/random/uuid r,
 }

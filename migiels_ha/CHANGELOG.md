@@ -1,5 +1,26 @@
 # Lista zmian
 
+## 1.15.12 — 18 listopada 2026
+
+### Nowe
+- TRUE Zero Export: gdy przekaźnikiem steruje już Twoja automatyzacja, wybierasz „Zostaw moją” albo „Zastąp” — MIGIELS wyłączy ją na czas sterowania i włączy z powrotem, gdy wyłączysz sterowanie albo usuniesz MIGIELS.
+
+### Ulepszenia
+- Gdy w czasie wyjazdu ktoś jest w domu, MIGIELS nie obniża temperatury i pokazuje to wprost: „Wyjazd wstrzymany — ktoś jest w domu, temperatura nie jest obniżana”. Obniżenie rusza samo, gdy dom będzie pusty.
+- Gdy któryś pokój nie dogrzewa się do nastawy, MIGIELS podnosi temperaturę wody w grzejnikach przy każdej pogodzie, nie tylko w mrozy.
+- Powiadomienia MIGIELS mówią w tytule, co się stało (np. „Błąd kotła”, „Brak prądu z sieci”), wskazują, który administrator ma szczegóły, a podsumowania dnia, tygodnia i miesiąca są czytelnie podzielone na linie.
+- Przy awarii sieci wskazówkę „Co zrobić” dostają dorośli domownicy, a dzieci tylko informację o tym, co się stało.
+- Porównanie taryf odróżnia taryfę URE od cennika standardowego sprzedawcy i mówi, czego porównanie nie obejmuje.
+
+### Poprawki
+- Zmiany w ustawieniach (np. harmonogram ogrzewania) nie przepadają już przy chwilowym przeciążeniu — MIGIELS ponawia zapis, a gdy się nie uda, strona pokazuje ustawienia, które naprawdę są zapisane.
+- Ładowanie i rozładowanie magazynu „dzisiaj” nie jest już liczone podwójnie, gdy falownik zeruje swoje liczniki o północy.
+- TRUE Zero Export odłącza dom od sieci tylko przy świeżych danych z falownika, a krótkie mignięcie błędu przy działającej sieci trafia wyłącznie do Diagnostyki.
+- Po nocnej awarii sieci powiadomienie „Sieć wróciła” przychodzi rano i nie zostawia na telefonie przypiętego „Sieć odłączona”.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.15.11 — 17 listopada 2026
 
 ### Ulepszenia
@@ -54,10 +75,3 @@
 
 ### Po aktualizacji
 - Nic do zrobienia.
-
-## 1.15.7 — 15 listopada 2026
-
-### Poprawki
-- Na szerokich monitorach (21:9 i szerszych) krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania, a dół obrazu jest widoczny w całości.
-- TRUE Zero Export: przycisk „Przygotuj (podgląd)” działa także przy pierwszym przygotowaniu automatyzacji.
-- TRUE Zero Export: pomocnik zabezpieczenia powstaje sam przy włączeniu sterowania.

@@ -1,5 +1,5 @@
 name: MIGIELS — Menedżer Instalacji Grzewczej i Energii
-version: 1.15.11
+version: 1.15.12
 slug: migiels_ha
 description: Menedżer instalacji grzewczej i energii — lokalny, liczy i doradza; urządzeniami sterują przygotowane przez MIGIELS automatyzacje Home Assistant, tylko po włączeniu przez administratora
 url: https://panel.smartservice.net.pl

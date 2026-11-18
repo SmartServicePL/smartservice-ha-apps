@@ -1,5 +1,20 @@
 # Smart Service HA — historia zmian
 
+## 1.9.32 — 18 listopada 2026
+
+### Ulepszenia
+- Powiadomienia mówią w tytule, co się stało (np. „Pranie zakończone”, „Awaria czujnika”) — także od robota, kosiarki, nawadniania i dzieci — a w osobnej linii podpowiadają, co zrobić.
+- Gdy robot sprzątający wstrzyma sprzątanie, Smart Service HA sam próbuje je wznowić po 1, 5 i 10 minutach.
+- Domownicy → Obecność pokazuje, kto teraz sprawia, że dom jest uznany za zajęty i skąd to wiadomo, a po 3 dobach bez zmiany lokalizacji ostrzega.
+- Oświetlenie w trybie „Jak cisza nocna domu” i nocne uzbrajanie alarmu kierują się godzinami ciszy nocnej, a nie tylko przełącznikiem „Dobranoc”.
+- Gdy usuniesz MIGIELS, Smart Service HA sam włączy z powrotem automatyzacje przekaźnika, które MIGIELS wyłączył przez „Zastąp”.
+
+### Poprawki
+- Kreator modułów po wyborze przechodzi do następnego kroku, a lista lamp nie przewija się już na górę.
+
+### Po aktualizacji
+- Nic do zrobienia.
+
 ## 1.9.31 — 17 listopada 2026
 
 ### Nowe
@@ -57,9 +72,3 @@
 
 ### Po aktualizacji
 - Nic do zrobienia.
-
-## 1.9.27 — 15 listopada 2026
-
-### Poprawki
-- Krajobraz ASTRY: sceny „Gdańsk” i „Tczew” zostały usunięte — kto miał którąś wybraną, ma teraz „Las i łąka”.
-- Na szerokich monitorach krajobraz ASTRY wypełnia cały ekran bez powtórzeń i bez rozciągania.
